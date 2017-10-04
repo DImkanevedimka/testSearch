@@ -1,0 +1,11 @@
+header{
+	background-color: #e3e3e3;
+}
+
+input[type='text']{
+	width: 300px;
+}
+
+.testimg{
+	height: 50px;
+}
