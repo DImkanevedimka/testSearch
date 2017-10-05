@@ -88,7 +88,8 @@ input[type='text']{
 }
 
 .productName{
-	font-size: 17px;
+	font-size: 14px;
+	font-weight: 600;
 }
 
 .productPrice{
@@ -106,6 +107,18 @@ input[type='text']{
 	color: #a9adb7;
 }
 
+
+.showAll {
+		margin-left: 52px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #5b5f6c;
+    display: block;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
 .autocomplete-suggestions {
 	padding-top: 12px;
 	padding-bottom: 12px;
@@ -117,9 +130,11 @@ input[type='text']{
 }
 
 .autocomplete-selected .productFull,
-.autocomplete-selected .productCategory{
+.autocomplete-selected .productCategory,
+.autocomplete-selected .showAll{
 	color: #fff;
 }
+
 
 
 .autocomplete-suggestion { padding: 2px 5px; white-space: nowrap; overflow: hidden; max-height: 100px; display: -webkit-flex;
@@ -130,6 +145,7 @@ input[type='text']{
 	align-items: center;
 	padding: 3px 18px 3px 12px;
 }
+
 .autocomplete-selected { 
 	background: linear-gradient(to right bottom, #00c6ff, #0073ff);
 	color: #fff; 
@@ -138,3 +154,7 @@ input[type='text']{
 .autocomplete-suggestions strong { font-weight: normal; color: #3399FF; }
 .autocomplete-group { padding: 2px 5px; }
 .autocomplete-group strong { display: block; border-bottom: 1px solid #000; }
+.autocomplete-no-suggestion{
+	font-weight: 300;
+	padding-left: 30px;
+}

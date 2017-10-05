@@ -42,7 +42,7 @@ $(function() {
         formatResult: function(sug, cur) {
 
             if(sug.data.showAll) {
-                var showAll = '<a href=' + sug.data.link +  'class="showAll">' + sug.value + '</a>';
+                var showAll = '<a class="showAll" href=' + sug.data.link +  '>' + sug.value + '</a>';
                 return showAll;
 
             } else {
