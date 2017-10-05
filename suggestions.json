@@ -6,7 +6,8 @@
                 "type":"default",
                 "Category":"default",
                 "price":"122 kr.",
-                "link":"#"
+                "link":"#",
+                "suggestionsLenght":2
             }
         },
         {

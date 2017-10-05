@@ -8,7 +8,8 @@ $(function() {
         }, 
         formatResult: function(sug, cur) {
             if (sug.data.showAll) {
-                var showAll = '<a class="showAll" href=' + sug.data.link +  '>' + sug.value +" "+ '(' + sug.data.suggestionsLenght + ')</a>';
+                var sugLenght = sug.data.suggestionsLenght || 1;
+                var showAll = '<a class="showAll" href=' + sug.data.link +  '>' + sug.value +" "+ '(' + sugLenght + ')</a>';
                 return showAll;
 
             } else if (sug.data.type === 'product') {
@@ -27,7 +28,8 @@ $(function() {
                 
                 return product;
             } else {
-                var defaulProduct = '<a class="default" href=' + sug.data.link + '><span> ' + sug.value + '</span> in category (2) </a>';
+                var sugLenght = sug.data.suggestionsLenght || 1;
+                var defaulProduct = '<a class="default" href=' + sug.data.link + '><span> ' + sug.value + '</span> in category (' + sugLenght + ') </a>';
                 return defaulProduct;
             }
         }
