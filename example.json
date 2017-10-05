@@ -1,0 +1,34 @@
+[
+        // Product type without img
+        {
+            "value": "Product withou img", // This is product title
+            "data": {
+                "type": "default", // This is group of products without img
+                "Category": "Some category", // This is products category which will be place under the product value(title)
+                "price": "122 kr.", // This is a price of product
+                "link": "#" // This is a link to product's page
+            }
+        },
+        // Product type with img
+        {
+            "value": "Product Name1", // This is product title
+            "data": {
+                "type": "product", // This is group of products with img
+                // This is url to img
+                "img": "http://nakleykiavto.ru.images.1c-bitrix-cdn.ru/upload/resize_cache/iblock/e62/285_480_136a784aa5facf479774d3d75ef15b257/e628c15bcf9945269152465aac06e717.png?145324223391239",
+                
+                "Category": "product category", // This is products category which will be place under the product value(title)
+                "price": "122 kr.", // This is a price of product
+                "link": "#" // This is a link to product's page
+            }
+        },
+        // Button Show all
+        {
+            "value": "Show all suggestions", // This is button title
+            "data": {
+                "showAll": "true", // This is marker for Show all Button
+                "link": "#", // This is link to Show all page
+                "suggestionsLenght": "3" // This is number of all suggestions
+            }
+        }
+    ]

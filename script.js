@@ -75,13 +75,13 @@ $(function() {
                 var productCategory = '<div class="productCategory">' + sug.data.Category + '</div>';
                 var productText ='<div class="productText">' + productName + productCategory + '</div>';
                 var productInfo = '<div class="productInfo">' + img + productText + '</div>';
-                var Price = '<div class="productPrice">'+ '<span>fra </span>' + sug.data.price + '</div>';
-                var full = '<a class="productFull product" href='+ sug.data.link + '>' + productInfo + Price + '</a>';
+                var price = '<div class="productPrice">'+ '<span>fra </span>' + sug.data.price + '</div>';
+                var product = '<a class="productFull product" href='+ sug.data.link + '>' + productInfo + price + '</a>';
                 
-                return full;
+                return product;
             } else {
-                var defaul = '<a class="default" href=' + sug.data.link + '><span> ' + sug.value + '</span> in category (2) </a>';
-                return defaul;
+                var defaulProduct = '<a class="default" href=' + sug.data.link + '><span> ' + sug.value + '</span> in category (2) </a>';
+                return defaulProduct;
             }
         }
     })
