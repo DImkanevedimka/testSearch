@@ -1,4 +1,5 @@
-[
+{
+    "suggestions": [
         // Product type without img
         {
             "value": "Product withou img", // This is product title
@@ -32,3 +33,4 @@
             }
         }
     ]
+}
