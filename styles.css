@@ -125,6 +125,7 @@ input[type='text']{
 	color: #a9adb7;
 	font-size: 13px;
 	font-weight: 400;
+	width: 100%;
 }
 
 .default span {
