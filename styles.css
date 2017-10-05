@@ -151,7 +151,8 @@ input[type='text']{
 .autocomplete-selected .productFull,
 .autocomplete-selected .productCategory,
 .autocomplete-selected .showAll,
-.autocomplete-selected .default{
+.autocomplete-selected .default,
+.autocomplete-selected .default span{
 	color: #fff;
 }
 
