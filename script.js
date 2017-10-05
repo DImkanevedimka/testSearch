@@ -13,12 +13,7 @@ $(function() {
                 return showAll;
 
             } else if (sug.data.type === 'product') {
-                var img = [
-                '<img class="productImg", src=',
-                sug.data.img,
-                '/>'
-                ].join('');
-
+                var img = '<img class="productImg", src=' + sug.data.img + '/>'
                 var productName = '<div class="productName">' + sug.value + '</div>';
                 var productCategory = '<div class="productCategory">' + sug.data.Category + '</div>';
                 var productText ='<div class="productText">' + productName + productCategory + '</div>';
