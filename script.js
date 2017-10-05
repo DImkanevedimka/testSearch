@@ -31,7 +31,8 @@ $(function() {
             value: 'Show all suggestions',
             data: {
                 showAll: true,
-                link: '#'
+                link: '#',
+                number: '3',
             }
         }
     ]
@@ -42,7 +43,7 @@ $(function() {
         formatResult: function(sug, cur) {
 
             if(sug.data.showAll) {
-                var showAll = '<a class="showAll" href=' + sug.data.link +  '>' + sug.value + '</a>';
+                var showAll = '<a class="showAll" href=' + sug.data.link +  '>' + sug.value +" "+ '(' + sug.data.number + ')</a>';
                 return showAll;
 
             } else {
