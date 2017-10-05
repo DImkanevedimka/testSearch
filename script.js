@@ -10,7 +10,7 @@ $(function() {
             }
         },
         {
-            value: 'Product Name2',
+            value: 'Sroduct Name2',
             data: {
                 img: 'http://nakleykiavto.ru.images.1c-bitrix-cdn.ru/upload/resize_cache/iblock/803/285_480_136a784aa5facf479774d3d75ef15b257/803073d0d3d6b1d2cd3f1447e6617e9d.png?145323215699622',
                 Category: 'producr category',
