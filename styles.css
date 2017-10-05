@@ -109,14 +109,33 @@ input[type='text']{
 
 
 .showAll {
-		margin-left: 52px;
-    font-size: 14px;
-    font-weight: 600;
-    text-decoration: none;
-    color: #5b5f6c;
-    display: block;
-    padding-top: 3px;
-    padding-bottom: 3px;
+	margin-left: 52px;
+	font-size: 14px;
+	font-weight: 600;
+	text-decoration: none;
+	color: #5b5f6c;
+	display: block;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.default {
+	display: block;
+	text-decoration: none;
+	color: #a9adb7;
+	font-size: 13px;
+	font-weight: 400;
+}
+
+.default span {
+	color: #5b5f6c;
+	font-weight: 600;
+}
+
+.suggestions__default	{
+	padding-bottom: 12px;
+	margin-bottom: 12px;
+	border-bottom: 1px solid #e5e5e5;
 }
 
 .autocomplete-suggestions {
@@ -131,7 +150,8 @@ input[type='text']{
 
 .autocomplete-selected .productFull,
 .autocomplete-selected .productCategory,
-.autocomplete-selected .showAll{
+.autocomplete-selected .showAll,
+.autocomplete-selected .default{
 	color: #fff;
 }
 
@@ -156,5 +176,8 @@ input[type='text']{
 .autocomplete-group strong { display: block; border-bottom: 1px solid #000; }
 .autocomplete-no-suggestion{
 	font-weight: 300;
-	padding-left: 30px;
+	padding: 3px 18px;
+	color: #5b5f6c;
+    font-size: 14px;
+    font-style: italic;
 }

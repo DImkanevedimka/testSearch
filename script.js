@@ -1,7 +1,7 @@
 $(function() {
     var suggestions = [
         {
-            value: 'Product Name1',
+            value: 'Product default',
             data: {
                 type: 'default',
                 Category: 'default',
@@ -45,13 +45,14 @@ $(function() {
                 type: 'product',
                 showAll: true,
                 link: '#',
-                number: '3',
+                suggestionsLenght: '3',
             }
         }
     ]
     
 
     $('#inputSearch').autocomplete({
+        showNoSuggestionNotice: true,
         lookup: suggestions,
         beforeRender: function(container) {
             container.find('.autocomplete-suggestion .product').parent().wrapAll('<div class="suggestions__product"/>');
@@ -60,7 +61,7 @@ $(function() {
         formatResult: function(sug, cur) {
 
             if (sug.data.showAll) {
-                var showAll = '<a class="showAll" href=' + sug.data.link +  '>' + sug.value +" "+ '(' + sug.data.number + ')</a>';
+                var showAll = '<a class="showAll" href=' + sug.data.link +  '>' + sug.value +" "+ '(' + sug.data.suggestionsLenght + ')</a>';
                 return showAll;
 
             } else if (sug.data.type === 'product') {
@@ -70,7 +71,6 @@ $(function() {
                 '/>'
                 ].join('');
 
-                
                 var productName = '<div class="productName">' + sug.value + '</div>';
                 var productCategory = '<div class="productCategory">' + sug.data.Category + '</div>';
                 var productText ='<div class="productText">' + productName + productCategory + '</div>';
@@ -80,8 +80,8 @@ $(function() {
                 
                 return full;
             } else {
-                var full = '<a class="default"></a>'
-                return full;
+                var defaul = '<a class="default" href=' + sug.data.link + '><span> ' + sug.value + '</span> in category (2) </a>';
+                return defaul;
             }
         }
     })
