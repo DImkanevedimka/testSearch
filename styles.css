@@ -9,7 +9,7 @@ header{
 	padding-bottom: 50px;
 }
 
-input[type='text']{
+#inputSearch{
 	width: 300px;
 }
 
